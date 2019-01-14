@@ -9,7 +9,12 @@ lib=c("bigmemory", "readr", "Hmisc", "dplyr", "MASS", "ggplot2", "lattice", "car
 CancerData<-fread("F:/AcadGild/workings/Project4_DiseasePrediction/CancerData.csv", sep=",", header = TRUE)
 
 #Exploratory Analysis  
-
+summary(CancerData)
+str(CancerData)
+dim(CancerData)
+class(CancerData)
+sapply(CancerData, class)
+describe(CancerData)
 
 
 # Missing Values verification
